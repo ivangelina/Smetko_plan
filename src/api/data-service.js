@@ -25,4 +25,7 @@ export default {
   submitRating(id, params, success, failure) {
     networkClient.get(`/movie/${id}/rating`, success, failure, params);
   },
+  getPopularPeople(params, success, failure) {
+    networkClient.get('/person/popular', success, failure, params);
+  },
 };

@@ -126,4 +126,19 @@ export default {
       },
     );
   },
+  [actions.GET_POPULAR_PEOPLE]({commit}, params = {}) {
+    commit(mutations.SET_LOADER, true);
+    dataService.getPopularPeople(
+      params,
+      (response) => {
+        console.log(response);
+        commit(mutations.SET_PEOPLE, response.results);
+        commit(mutations.SET_LOADER, false);
+      },
+      (error) => {
+        console.log(error);
+        commit(mutations.SET_LOADER, false);
+      },
+    );
+  },
 };

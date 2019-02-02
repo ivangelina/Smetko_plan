@@ -9,6 +9,7 @@ import Favorite from '../components/favorite/Favorite';
 import MovieDetails from '../components/moviedetails/MovieDetails';
 import DiscoverMovies from '../components/discover/DiscoverMovies';
 import Footer from '../components/footer/Footer';
+import Peoples from "../components/peoples/Peoples"
 
 Vue.use(Router);
 
@@ -73,7 +74,18 @@ export default new Router({
         navigation: Navigation,
         default: MovieDetails,
         footer: Footer,
+      }
+    },
+    
+    {
+      path: '/peoples',
+      name: 'Peoples',
+      components: {
+        navigation: Navigation,
+        default: Peoples,
+        footer: Footer,
       },
+
     },
   ],
 });

@@ -28,4 +28,7 @@ export default {
   [mutations.SET_MOVIES_GENRES](state, genres) {
     state.movieGenres = genres;
   },
+  [mutations.SET_PEOPLE](state, people) {
+    state.people = people;
+  },
 };
