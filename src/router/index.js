@@ -10,6 +10,7 @@ import MovieDetails from '../components/moviedetails/MovieDetails';
 import DiscoverMovies from '../components/discover/DiscoverMovies';
 import Footer from '../components/footer/Footer';
 import Peoples from "../components/peoples/Peoples"
+import Images from "../components/images/Images"
 
 Vue.use(Router);
 
@@ -83,6 +84,16 @@ export default new Router({
       components: {
         navigation: Navigation,
         default: Peoples,
+        footer: Footer,
+      },
+
+    },
+    {
+      path: '/images',
+      name: 'Images',
+      components: {
+        navigation: Navigation,
+        default: Images,
         footer: Footer,
       },
 

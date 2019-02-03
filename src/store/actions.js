@@ -140,5 +140,5 @@ export default {
         commit(mutations.SET_LOADER, false);
       },
     );
-  },
+  }
 };

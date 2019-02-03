@@ -30,5 +30,5 @@ export default {
   },
   [mutations.SET_PEOPLE](state, people) {
     state.people = people;
-  },
+  }
 };

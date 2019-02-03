@@ -8,6 +8,7 @@
           <b-nav-item to="/trending">Популярни</b-nav-item>
           <b-nav-item to="/movies">Филми</b-nav-item>
            <b-nav-item to="/peoples">Хора</b-nav-item>
+           <b-nav-item to="/images">Снимки</b-nav-item>
           <b-nav-item to="/series">Сериали</b-nav-item>
           <b-nav-item to="/favorite">Любими</b-nav-item>
         </b-navbar-nav>
